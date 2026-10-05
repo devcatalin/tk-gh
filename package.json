@@ -1,0 +1,11 @@
+{
+  "name": "tk-gh-shop",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.49.1"
+  }
+}
