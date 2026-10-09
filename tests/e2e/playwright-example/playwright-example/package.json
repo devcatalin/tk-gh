@@ -1,0 +1,13 @@
+{
+  "name": "playwright-example",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  },
+  "scripts": {
+    "install": "npm install",
+    "playwright:install": "playwright install",
+    "test": "playwright test"
+  }
+}
