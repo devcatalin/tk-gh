@@ -1,3 +1,4 @@
+// checked by validation.
 import {expect, test} from '@playwright/test';
 
 test('home page has a title', async ({page}) => {
