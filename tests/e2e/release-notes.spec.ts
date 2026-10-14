@@ -1,3 +1,4 @@
+// Guards the 2.4 release notes.
 import {expect, test} from '@playwright/test';
 import {existsSync, readFileSync} from 'node:fs';
 import {resolve} from 'node:path';
