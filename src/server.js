@@ -1,4 +1,4 @@
-// Served at / for the Playwright home page test
+// Served at / for the Playwright home page title test
 const http = require('http');
 
 const server = http.createServer((req, res) => {
