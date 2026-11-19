@@ -11,6 +11,22 @@ spec:
   defaultModel: gpt-4o
   labels:
     team: qa
+  mcpServers:
+  - name: testkube
+    tools:
+      list_executions:
+        enabled: true
+        autoApproved: true
+  - name: e2e-shared
+    signIn: shared_key
+    credentialReference: secret://e2e-mcp-headers
+    tools:
+      ask_question:
+        enabled: true
+  - name: e2e-perperson
+    signIn: per_person
+  - name: e2e-missing
+    signIn: none
   skills:
   - name: flaky-triage
     description: Use when an execution failed only some of the time.
