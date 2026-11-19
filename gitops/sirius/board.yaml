@@ -5,7 +5,7 @@ metadata:
   labels:
     team: qa
 spec:
-  displayName: E2E Board v2
+  displayName: E2E Board v3
   description: GitOps end-to-end check board.
   shared: true
   layout:
