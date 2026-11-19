@@ -3,7 +3,7 @@ kind: TestBundle
 metadata:
   name: e2e-bundle
 spec:
-  displayName: E2E Bundle
+  displayName: E2E Bundle v2
   description: Playwright suite of the tk-gh app.
   labels:
     team: qa

@@ -3,7 +3,7 @@ kind: LLMProvider
 metadata:
   name: e2e-llm
 spec:
-  displayName: E2E LLM
+  displayName: E2E LLM v2
   provider: openai
   baseUrl: https://api.openai.com/v1
   credentialReference: secret://e2e-llm-key
@@ -13,4 +13,4 @@ spec:
     - name: gpt-4o
       label: GPT-4o
       type: chat
-      contextWindowTokens: 128000
+      contextWindowTokens: 64000
