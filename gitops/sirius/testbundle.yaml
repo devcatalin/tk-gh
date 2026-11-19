@@ -1,0 +1,22 @@
+apiVersion: testbundles.testkube.io/v1alpha1
+kind: TestBundle
+metadata:
+  name: e2e-bundle
+spec:
+  displayName: E2E Bundle
+  description: Playwright suite of the tk-gh app.
+  labels:
+    team: qa
+  gitSource:
+    uri: https://x-access-token:ghp_FAKEe2eNOTAREALTOKEN000000000000000@github.com/devcatalin/tk-gh.git
+    revision: main
+    path: tests
+  skills:
+    - name: playwright-conventions
+      description: Use when writing or fixing a Playwright test in this repository.
+      content: Tests live in tests/ and use the page objects in src/.
+  contexts:
+    - title: App conventions
+      content: The app answers JSON and errors follow RFC 9457.
+  aiAgents:
+    - e2e-agent

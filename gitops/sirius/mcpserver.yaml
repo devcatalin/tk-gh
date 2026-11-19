@@ -1,0 +1,19 @@
+apiVersion: ai.testkube.io/v1alpha1
+kind: MCPServer
+metadata:
+  name: e2e-shared
+spec:
+  displayName: E2E Shared Key
+  description: Reached with one shared key from an Environment Credential.
+  type: http
+  url: https://mcp.deepwiki.com/mcp
+---
+apiVersion: ai.testkube.io/v1alpha1
+kind: MCPServer
+metadata:
+  name: e2e-perperson
+spec:
+  displayName: E2E Per Person
+  description: Each person signs in with their own account.
+  type: sse
+  url: https://mcp.atlassian.com/v1/sse

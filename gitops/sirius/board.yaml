@@ -1,0 +1,25 @@
+apiVersion: insights.testkube.io/v1alpha1
+kind: Board
+metadata:
+  name: e2e-board
+  labels:
+    team: qa
+spec:
+  displayName: E2E Board
+  description: GitOps end-to-end check board.
+  shared: true
+  layout:
+    rows:
+      - cells: [pass-rate, executions]
+  reports:
+    - id: pass-rate
+      kind: pass-fail
+      name: Pass rate
+      params:
+        duration: week
+        measure: ratio
+    - id: executions
+      kind: executions
+      name: Executions by status
+      params:
+        groupBy: status
