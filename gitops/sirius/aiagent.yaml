@@ -5,33 +5,30 @@ metadata:
 spec:
   displayName: E2E Agent v2
   description: GitOps end-to-end check agent, updated by commit.
-  instructions: 'You answer questions about the test executions of this environment.
-
-    '
+  instructions: |
+    You answer questions about the test executions of this environment.
   defaultModel: gpt-4o
   labels:
     team: qa
   mcpServers:
-  - name: testkube
-    tools:
-      list_executions:
-        enabled: true
-        autoApproved: true
-  - name: e2e-shared
-    signIn: shared_key
-    credentialReference: secret://e2e-mcp-headers
-    tools:
-      ask_question:
-        enabled: true
-  - name: e2e-perperson
-    signIn: per_person
-  - name: e2e-missing
-    signIn: none
+    - name: testkube
+      tools:
+        list_executions:
+          enabled: true
+          autoApproved: true
+    - name: e2e-shared
+      signIn: shared_key
+      credentialReference: secret://e2e-mcp-headers
+      tools:
+        ask_question:
+          enabled: true
+    - name: e2e-perperson
+      signIn: per_person
   skills:
-  - name: flaky-triage
-    description: Use when an execution failed only some of the time.
-    content: Compare the last ten executions before calling a test flaky.
-    alwaysInclude: true
-  - name: issue-format
-    description: Use when opening an issue.
-    content: 'Title issues "Flaky: <workflow>" and link the execution.'
+    - name: flaky-triage
+      description: Use when an execution failed only some of the time.
+      content: Compare the last ten executions before calling a test flaky.
+      alwaysInclude: true
+    - name: issue-format
+      description: Use when opening an issue.
+      content: 'Title issues "Flaky: <workflow>" and link the execution.'
