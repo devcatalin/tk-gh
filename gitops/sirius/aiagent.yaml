@@ -4,7 +4,7 @@ metadata:
   name: e2e-agent
 spec:
   displayName: E2E Agent v2
-  description: GitOps end-to-end check agent, updated by commit.
+  description: GitOps end-to-end check agent, updated by commit (after the server delete).
   instructions: |
     You answer questions about the test executions of this environment.
   defaultModel: gpt-4o
