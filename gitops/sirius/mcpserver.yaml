@@ -1,9 +1,0 @@
-apiVersion: ai.testkube.io/v1alpha1
-kind: MCPServer
-metadata:
-  name: e2e-shared
-spec:
-  displayName: E2E Shared Key v4
-  description: Reached with one shared key from an Environment Credential.
-  type: http
-  url: https://mcp.deepwiki.com/mcp
