@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: flux-smoke-2
-data:
-  note: "A plain object to smoke-test a drydock Flux source (drydock-flux-phase1)."
-  step: "3"
