@@ -1,0 +1,7 @@
+apiVersion: ai.testkube.io/v1alpha1
+kind: MCPServer
+metadata:
+  name: e2e-lost
+spec:
+  displayName: E2E Lost Delete
+  url: https://mcp.deepwiki.com/mcp
