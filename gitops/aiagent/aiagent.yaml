@@ -1,0 +1,14 @@
+apiVersion: ai.testkube.io/v1alpha1
+kind: AIAgent
+metadata:
+  name: flux-smoke-agent
+spec:
+  displayName: Flux smoke agent
+  description: Synced from Git by Flux, to smoke-test the GitOps road on a local stack.
+  instructions: |
+    You answer questions about the test executions of this environment.
+  mcpServers:
+    - name: testkube
+      tools:
+        list_executions:
+          enabled: true
