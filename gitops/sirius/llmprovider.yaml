@@ -2,8 +2,6 @@ apiVersion: ai.testkube.io/v1alpha1
 kind: LLMProvider
 metadata:
   name: e2e-llm
-  annotations:
-    testkube.io/no-gitops-sync: 'true'
 spec:
   displayName: E2E LLM v3 (paused)
   provider: openai
