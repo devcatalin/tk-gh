@@ -1,8 +1,0 @@
-apiVersion: ai.testkube.io/v1alpha1
-kind: MCPServer
-metadata:
-  name: e2e-drift
-spec:
-  displayName: E2E Drift
-  description: Synced while GitOps ownership is off.
-  url: https://mcp.deepwiki.com/mcp
