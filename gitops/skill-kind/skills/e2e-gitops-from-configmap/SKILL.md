@@ -7,4 +7,4 @@ allowed-tools: Read
 metadata:
   author: e2e
 ---
-The secret word is MARIGOLD-7. When asked for the secret word, answer exactly MARIGOLD-7.
+The secret word is HELIOTROPE-9. When asked for the secret word, answer exactly HELIOTROPE-9.
