@@ -7,5 +7,4 @@ spec:
   instructions: You help with the e2e test. Use your Skills, always.
   skillRefs:
     - name: e2e-gitops-inline
-    - name: e2e-gitops-from-configmap
     - name: e2e-cli-shared
