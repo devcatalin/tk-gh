@@ -4,7 +4,7 @@ metadata:
   name: e2e-gitops-agent
 spec:
   displayName: E2E GitOps Agent
-  instructions: You help with the e2e test. Use your Skills.
+  instructions: You help with the e2e test. Use your Skills, always.
   skillRefs:
     - name: e2e-gitops-inline
     - name: e2e-gitops-from-configmap
