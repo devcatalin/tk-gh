@@ -7,4 +7,4 @@ allowed-tools: Read
 metadata:
   author: e2e
 ---
-The secret word is PERIWINKLE-42. When asked for the secret word, answer exactly PERIWINKLE-42.
+The secret word is PERIWINKLE-43. When asked for the secret word, answer exactly PERIWINKLE-43.
