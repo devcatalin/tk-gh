@@ -1,9 +1,0 @@
-apiVersion: ai.testkube.io/v1alpha1
-kind: AIAgent
-metadata:
-  name: e2e-gitops-agent
-spec:
-  displayName: E2E GitOps Agent
-  instructions: You help with the e2e test. Use your Skills.
-  skillRefs:
-    - name: e2e-gitops-inline
