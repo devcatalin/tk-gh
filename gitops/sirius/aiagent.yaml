@@ -4,7 +4,7 @@ metadata:
   name: e2e-agent
 spec:
   displayName: E2E Agent
-  description: GitOps revalidation agent, v6.
+  description: GitOps revalidation agent, v7.
   instructions: 'You answer questions about the test executions of this environment.
 
     '
