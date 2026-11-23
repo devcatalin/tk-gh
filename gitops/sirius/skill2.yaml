@@ -1,0 +1,11 @@
+apiVersion: ai.testkube.io/v1alpha1
+kind: Skill
+metadata:
+  name: e2e-skill-two
+spec:
+  description: Use when an execution timed out.
+  license: Apache-2.0
+  content: |
+    Check the step timeouts before raising them.
+  testkube:
+    alwaysInclude: false
