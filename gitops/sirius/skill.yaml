@@ -1,0 +1,11 @@
+apiVersion: ai.testkube.io/v1alpha1
+kind: Skill
+metadata:
+  name: e2e-lib-skill
+spec:
+  description: Use when a test is flaky in this environment.
+  license: MIT
+  content: |
+    Compare the last ten executions before calling a test flaky.
+  testkube:
+    alwaysInclude: false
