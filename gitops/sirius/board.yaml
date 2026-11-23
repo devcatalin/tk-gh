@@ -6,7 +6,7 @@ metadata:
     team: qa
 spec:
   displayName: E2E Board
-  description: GitOps revalidation board v2.
+  description: GitOps revalidation board v5.
   shared: true
   layout:
     rows:

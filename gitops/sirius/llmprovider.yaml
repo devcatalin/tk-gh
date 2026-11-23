@@ -8,7 +8,7 @@ spec:
   baseUrl: https://api.openai.com/v1
   apiKey: '{{ credential("e2e-llm-key") }}'
   extraHeaders:
-    X-Team: qa2
+    X-Team: qa5
   models:
     - name: gpt-4o
       label: GPT-4o

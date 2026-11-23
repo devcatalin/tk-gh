@@ -6,6 +6,6 @@ spec:
   description: Use when a test is flaky in this environment.
   license: MIT
   content: |
-    Compare the last ten executions before calling a test flaky.
+    Compare the last ten executions (v5) before calling a test flaky.
   testkube:
     alwaysInclude: false
