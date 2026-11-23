@@ -4,13 +4,30 @@ metadata:
   name: e2e-agent
 spec:
   displayName: E2E Agent
-  description: GitOps revalidation agent, v3 (mcpServers left out).
+  description: GitOps revalidation agent, v4.
   instructions: 'You answer questions about the test executions of this environment.
 
     '
   defaultModel: gpt-4o
   labels:
     team: qa
+  mcpServers:
+  - name: testkube
+    tools:
+      list_executions:
+        enabled: true
+        autoApproved: true
+  - name: e2e-shared
+    signIn: shared_key
+    headers:
+      Authorization: Bearer {{ credential("e2e-mcp-token") }}
+      X-Tenant: acme
+    tools:
+      ask_question:
+        enabled: true
+  - name: e2e-perperson
+    signIn: per_person
+  - name: e2e-extra
   skills:
   - name: issue-format
     description: Use when opening an issue.
