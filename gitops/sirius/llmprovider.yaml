@@ -2,15 +2,17 @@ apiVersion: ai.testkube.io/v1alpha1
 kind: LLMProvider
 metadata:
   name: e2e-llm
+  annotations:
+    testkube.io/no-gitops-sync: 'true'
 spec:
   displayName: E2E LLM
   provider: openai
   baseUrl: https://api.openai.com/v1
   apiKey: '{{ credential("e2e-llm-key") }}'
   extraHeaders:
-    X-Team: qa5
+    X-Team: paused-change
   models:
-    - name: gpt-4o
-      label: GPT-4o
-      type: chat
-      contextWindowTokens: 128000
+  - name: gpt-4o
+    label: GPT-4o
+    type: chat
+    contextWindowTokens: 128000

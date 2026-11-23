@@ -4,22 +4,25 @@ metadata:
   name: e2e-board
   labels:
     team: qa
+    testkube.io/group: payments
 spec:
   displayName: E2E Board
   description: GitOps revalidation board v5.
   shared: true
   layout:
     rows:
-      - cells: [pass-rate, executions]
+    - cells:
+      - pass-rate
+      - executions
   reports:
-    - id: pass-rate
-      kind: pass-fail
-      name: Pass rate
-      params:
-        duration: week
-        measure: ratio
-    - id: executions
-      kind: executions
-      name: Executions by status
-      params:
-        groupBy: status
+  - id: pass-rate
+    kind: pass-fail
+    name: Pass rate
+    params:
+      duration: week
+      measure: ratio
+  - id: executions
+    kind: executions
+    name: Executions by status
+    params:
+      groupBy: status

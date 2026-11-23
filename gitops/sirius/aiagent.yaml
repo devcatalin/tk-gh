@@ -2,9 +2,11 @@ apiVersion: ai.testkube.io/v1alpha1
 kind: AIAgent
 metadata:
   name: e2e-agent
+  labels:
+    testkube.io/group: payments
 spec:
   displayName: E2E Agent
-  description: GitOps revalidation agent, v7.
+  description: GitOps revalidation agent, v8 (group label).
   instructions: 'You answer questions about the test executions of this environment.
 
     '
