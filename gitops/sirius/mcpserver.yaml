@@ -4,7 +4,7 @@ metadata:
   name: e2e-shared
 spec:
   displayName: E2E Shared Key
-  description: Reached with headers read from Environment Credentials.
+  description: Reached with headers read from Environment Credentials, v2.
   type: http
   url: https://mcp.deepwiki.com/mcp
 ---
