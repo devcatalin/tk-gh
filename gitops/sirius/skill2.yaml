@@ -6,6 +6,6 @@ spec:
   description: Use when an execution timed out.
   license: Apache-2.0
   content: |
-    Check the step timeouts before raising them.
+    Check the step timeouts before raising them (v2).
   testkube:
     alwaysInclude: false
