@@ -27,7 +27,6 @@ spec:
         enabled: true
   - name: e2e-perperson
     signIn: per_person
-  - name: e2e-extra
   skills:
   - name: issue-format
     description: Use when opening an issue.
