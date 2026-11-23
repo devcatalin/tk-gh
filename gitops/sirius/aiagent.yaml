@@ -17,14 +17,6 @@ spec:
       list_executions:
         enabled: true
         autoApproved: true
-  - name: e2e-shared
-    signIn: shared_key
-    headers:
-      Authorization: Bearer {{ credential("e2e-mcp-token") }}
-      X-Tenant: acme
-    tools:
-      ask_question:
-        enabled: true
   - name: e2e-perperson
     signIn: per_person
   skills:
