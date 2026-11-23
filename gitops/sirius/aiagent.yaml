@@ -4,7 +4,7 @@ metadata:
   name: e2e-agent
 spec:
   displayName: E2E Agent
-  description: GitOps revalidation agent, v10.
+  description: GitOps revalidation agent, v11 (no skillRefs).
   instructions: 'You answer questions about the test executions of this environment.
 
     '
@@ -23,6 +23,4 @@ spec:
   - name: issue-format
     description: Use when opening an issue.
     content: 'Title issues "Flaky: <workflow>" and link the execution.'
-  skillRefs:
-  - name: e2e-lib-skill
-  - name: e2e-skill-two
+  skillRefs: []
