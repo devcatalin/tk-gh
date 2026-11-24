@@ -7,4 +7,4 @@ spec:
   description: Answers short questions over A2A. Synced from Git by Flux.
   instructions: Answer in one short sentence.
   a2a:
-    enabled: true
+    enabled: false
