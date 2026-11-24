@@ -1,0 +1,10 @@
+apiVersion: ai.testkube.io/v1alpha1
+kind: AIAgent
+metadata:
+  name: a2a-helper
+spec:
+  displayName: A2A Helper
+  description: Answers short questions over A2A. Synced from Git by Flux.
+  instructions: Answer in one short sentence.
+  a2a:
+    enabled: true
